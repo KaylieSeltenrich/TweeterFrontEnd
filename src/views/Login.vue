@@ -28,7 +28,7 @@ export default {
       this.loginStatus = "Loading";
       axios
         .request({
-          url: "https://tweeterest.ml/api/login",
+          url: "https://www.squawker.ml/api/login",
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -35,15 +35,16 @@ export default {
       bio: "",
       birthdate: "",
       updateStatus: "",
-      loginToken: cookies.get("session")
+      loginToken: cookies.get("session"),
     };
   },
+
   methods: {
     updateProfile: function() {
       
       axios
         .request({
-          url: "https://tweeterest.ml/api/users",
+          url: "https://www.squawker.ml/api/users",
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -68,7 +69,7 @@ export default {
            document.getElementById("update-profile").innerText = "Error!"
         
         });
-    }
+    },
   }
 };
 </script>

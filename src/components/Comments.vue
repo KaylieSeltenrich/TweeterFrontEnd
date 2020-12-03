@@ -90,7 +90,7 @@ export default {
     makeComment: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/comments",
+          url: "https://www.squawker.ml/api/comments",
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -115,7 +115,7 @@ export default {
     getComment: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/comments",
+          url: "https://www.squawker.ml/api/comments",
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -137,7 +137,7 @@ export default {
     editComment: function(content, id) {
       axios
         .request({
-          url: "https://tweeterest.ml/api/comments",
+          url: "https://www.squawker.ml/api/comments",
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -162,7 +162,7 @@ export default {
     deleteComment: function(id) {
       axios
         .request({
-          url: "https://tweeterest.ml/api/comments",
+          url: "https://www.squawker.ml/api/comments",
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

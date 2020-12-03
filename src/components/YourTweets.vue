@@ -58,7 +58,7 @@ export default {
     updateTweet: function(content, id) {
       axios
         .request({
-          url: "https://tweeterest.ml/api/tweets",
+          url: "https://www.squawker.ml/api/tweets",
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -82,7 +82,7 @@ export default {
     deleteTweet: function(id) {
       axios
         .request({
-          url: "https://tweeterest.ml/api/tweets",
+          url: "https://www.squawker.ml/api/tweets",
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

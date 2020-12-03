@@ -26,7 +26,7 @@ export default {
     viewFollowers: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/followers",
+          url: "https://www.squawker.ml/api/followers",
           method: "GET",
           headers: {
             "Content-Type": "application/json",

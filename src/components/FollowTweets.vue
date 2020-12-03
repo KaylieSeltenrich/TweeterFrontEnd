@@ -46,7 +46,7 @@ export default {
     getTweets: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/follows",
+          url: "https://www.squawker.ml/api/follows",
           method: "GET",
           headers: {
             "Content-Type": "application/json",

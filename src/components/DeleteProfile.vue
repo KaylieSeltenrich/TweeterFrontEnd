@@ -49,7 +49,7 @@ export default {
       this.updateStatus = "Loading";
       axios
         .request({
-          url: "https://tweeterest.ml/api/users",
+          url: "https://www.squawker.ml/api/users",
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

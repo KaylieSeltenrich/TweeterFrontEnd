@@ -40,7 +40,7 @@ import cookies from "vue-cookies";
     createTweet: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/tweets",
+          url: "https://www.squawker.ml/api/tweets",
           method: "POST",
           headers: {
             "Content-Type": "application/json",

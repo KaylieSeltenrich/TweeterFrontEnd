@@ -34,7 +34,7 @@ export default {
     getFollowingTweets: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/follows",
+          url: "https://www.squawker.ml/api/follows",
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -51,7 +51,7 @@ export default {
             console.log(i);
             axios
               .request({
-                url: "https://tweeterest.ml/api/tweets",
+                url: "https://www.squawker.ml/api/tweets",
                 method: "GET",
                 headers: {
                   "Content-Type": "application/json",

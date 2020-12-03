@@ -50,7 +50,7 @@ export default {
     signupUser: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/users",
+          url: "https://www.squawker.ml/api/users",
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -37,7 +37,7 @@ export default {
     showProfiles: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/users",
+          url: "https://www.squawker.ml/api/users",
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export default {
     followUser: function(userId) {
       axios
         .request({
-          url: "https://tweeterest.ml/api/follows",
+          url: "https://www.squawker.ml/api/follows",
           method: "POST",
           headers: {
             "Content-Type": "application/json",

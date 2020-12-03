@@ -23,7 +23,7 @@ export default {
     logOut: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/login",
+          url: "https://www.squawker.ml/api/login",
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

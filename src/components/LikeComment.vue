@@ -44,7 +44,7 @@ export default {
     likeComment: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/comment-likes",
+          url: "https://www.squawker.ml/api/comment-likes",
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -68,7 +68,7 @@ export default {
     deleteLikeComment: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/comment-likes",
+          url: "https://www.squawker.ml/api/comment-likes",
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
@@ -92,7 +92,7 @@ export default {
     getLikedComments: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/comment-likes",
+          url: "https://www.squawker.ml/api/comment-likes",
           method: "GET",
           headers: {
             "Content-Type": "application/json",

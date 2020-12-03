@@ -30,7 +30,7 @@ export default {
     viewFollowing: function() {
       axios
         .request({
-          url: "https://tweeterest.ml/api/follows",
+          url: "https://www.squawker.ml/api/follows",
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ export default {
       console.log(followId);
       axios
         .request({
-          url: "https://tweeterest.ml/api/follows",
+          url: "https://www.squawker.ml/api/follows",
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
