@@ -67,8 +67,10 @@ export default {
         })
         .then(response => {
           console.log(response.data);
-          cookies.set("session", response.data[0].loginToken);
-          this.$router.push("/profile");
+          cookies.set("session", response.data.loginToken);
+          cookies.set("user", response.data.userId);
+          this.$router.push("/");
+          this.$router.go(0);
         })
         .catch(error => {
           console.log(error);
