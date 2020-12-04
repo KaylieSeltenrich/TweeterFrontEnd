@@ -17,7 +17,7 @@
       v-model="password"
     />
     <p>Bio:</p>
-    <textarea id="bio-input" class="centertext" v-model="bio"></textarea>
+    <textarea id="bio-input" class="centertext" style="resize: none" v-model="bio"></textarea>
     <p>Birthday:</p>
     <input
       type="text"
@@ -27,6 +27,7 @@
       placeholder="YYYY-MM-DD"
     />
     <h2 @click="signupUser">Sign Up</h2>
+  
   </div>
 </template>
 
@@ -42,7 +43,7 @@ export default {
       username: "",
       password: "",
       bio: "",
-      birthdate: ""
+      birthdate: "",
     };
   },
 
@@ -67,7 +68,7 @@ export default {
         .then(response => {
           console.log(response.data);
           cookies.set("session", response.data[0].loginToken);
-          this.$router.push("/home");
+          this.$router.push("/profile");
         })
         .catch(error => {
           console.log(error);
@@ -97,7 +98,10 @@ h2 {
   margin-top: 25%;
   padding: 5%;
 }
-
+#signupstatus {
+  text-align: center;
+  width: 80%;
+}
 @media only screen and (min-width: 1000px) {
   div {
     display: grid;
